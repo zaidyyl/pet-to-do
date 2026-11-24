@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pet-To-Do| Portafolio de diseño</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="wrap" id="portada">
+    <div class="hero">
+      <div>
+        <p class="eyebrow">Interacción Hombre–Máquina · Entrega parcial</p>
+        <h1>Pet-To-Do</h1>
+        <p class="intro">Cuando estudiar y trabajar compiten por el mismo tiempo, cuesta saber qué vence primero y
+          cuánto queda por hacer.</p>
+        <p>Diseñamos una app móvil para que estudiantes que también trabajan puedan organizar sus pendientes, seguir su
+          avance y cuidar una mascota virtual.</p>
+        <p class="team">Cristian Franchini · Zaidy Lopez · Sheila Villanueva</p>
+      </div>
+      <figure>
+        <img src="img/alta-inicio.png">
+        <figcaption>Propuesta preliminar de alta fidelidad.</figcaption>
+      </figure>
+    </div>
+    <nav aria-label="Índice del portafolio">
+      <a href="#portada">Portada</a>
+      <a href="#investigacion">Investigación</a>
+      <a href="#definicion">Definición</a>
+      <a href="#ideacion">Ideación</a>
+      <a href="#evolucion">Evolución</a>
+      <a href="#evaluacion">Evaluaciones</a>
+    </nav>
+  </header>
+  <main id="contenido" class="wrap">
+    <section id="investigacion">
+      <h2>Investigación</h2>
+      <p>
+        Para entender por qué las personas postergan sus tareas y qué las ayuda a retomarlas,
+        realizamos <strong>5 entrevistas</strong> y recibimos <strong>62 respuestas</strong>
+        mediante un formulario. El producto está dirigido a estudiantes que también trabajan.
+      </p>
+
+      <h3>Hallazgos del formulario</h3>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Resultados del formulario">
+        <table>
+          <caption>Respuestas sobre la postergación de tareas</caption>
+          <thead>
+            <tr>
+              <th scope="col">Hallazgo</th>
+              <th scope="col">Respuestas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Postergan una tarea pendiente frecuentemente, casi siempre o siempre.</td>
+              <td>41 de 62</td>
+            </tr>
+            <tr>
+              <td>Les resulta moderadamente difícil, difícil o muy difícil empezar una tarea.</td>
+              <td>40 de 62</td>
+            </tr>
+            <tr>
+              <td>Identifican el cansancio o la poca energía como un factor de postergación.</td>
+              <td>36 de 62</td>
+            </tr>
+            <tr>
+              <td>Señalan que no saber por dónde empezar influye en que posterguen una tarea.</td>
+              <td>34 de 62</td>
+            </tr>
+            <tr>
+              <td>Identifican la facilidad para distraerse como un factor de postergación.</td>
+              <td>33 de 62</td>
+            </tr>
+            <tr>
+              <td>Frecuentemente, casi siempre o siempre hacen una tarea principalmente porque se acerca la fecha
+                límite.</td>
+              <td>46 de 62</td>
+            </tr>
+            <tr>
+              <td>Sienten estrés o preocupación al posponer una tarea.</td>
+              <td>43 de 62</td>
+            </tr>
+            <tr>
+              <td>Son bastante o completamente conscientes de que están evitando la tarea.</td>
+              <td>41 de 62</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Qué aportaron las entrevistas</h3>
+      <p>
+        Las cinco entrevistadas mencionaron distracciones mientras hacían tareas y describieron
+        emociones negativas relacionadas con la postergación o con la cercanía de la fecha límite.
+        Las cinco también mencionaron el interés, el gusto o la dificultad de una tarea al explicar
+        cuándo la postergan. Algunas relataron que empezaban o retomaban sus pendientes
+        cuando quedaba poco tiempo.
+      </p>
+
+      <h3>Mapa de empatía</h3>
+      <dl>
+        <dt><strong>Dice</strong></dt>
+        <dd>«Siempre hago un listado de lo que debo hacer, y lo empiezo de acuerdo a su prioridad.»</dd>
+        <dd>«Utilizar el celular me distrae múltiples veces mientras realizo mis tareas en general.»</dd>
+
+        <dt><strong>Piensa</strong></dt>
+        <dd>Evalúa el interés, la dificultad y el plazo antes de decidir cuándo empezar. Sabe que posponer puede dejarla
+          con poco tiempo.</dd>
+
+        <dt><strong>Hace</strong></dt>
+        <dd>Organiza sus pendientes por prioridad. A veces interrumpe lo que está haciendo para usar el celular o hacer
+          otra actividad y retoma la tarea cuando se acerca la entrega.</dd>
+
+        <dt><strong>Siente</strong></dt>
+        <dd>Siente estrés cuando se acumulan tareas, frustración cuando no entiende una consigna y presión cuando queda
+          poco tiempo para entregar.</dd>
+      </dl>
+
+      <h3>Qué decisiones tomamos a partir de los hallazgos</h3>
+      <ul>
+        <li>
+          <strong>Mostrar un primer paso claro.</strong> Como 34 de 62 personas señalaron
+          que no saber por dónde empezar influye en la postergación, incorporamos
+          subtareas visibles para dividir un pendiente en pasos más pequeños.
+        </li>
+        <li>
+          <strong>Facilitar que la persona retome una tarea.</strong> Las distracciones
+          aparecieron tanto en el formulario como en las entrevistas. Por eso mostramos
+          qué pasos ya se completaron y guardamos el avance automáticamente al marcarlos.
+        </li>
+        <li>
+          <strong>Hacer visible el plazo.</strong> Como 46 de 62 personas indicaron que
+          la cercanía de la entrega suele impulsarlas a actuar, mostramos la fecha límite
+          en la lista y dejamos la opción de configurar un recordatorio.
+        </li>
+      </ul>
+    </section>
+    <section id="definicion">
+      <h2>Definición del problema</h2>
+      <h3>Persona de referencia y punto de vista</h3>
+      <p>Una persona que estudia y trabaja necesita saber qué tiene pendiente y cuál es el siguiente paso, porque entre
+        ambos compromisos se le acumulan entregas y le cuesta retomar tareas empezadas.</p>
+      <h3>¿Cómo podríamos ayudarle a retomar una tarea rápido?</h3>
+      <p>Como estudiante que también trabaja, quiero organizar mis pendientes por grupo y ver el avance de cada tarea,
+        para decidir qué hacer en el tiempo que tengo disponible.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Relación entre evidencia y requisitos">
+        <table>
+          <caption>De la evidencia disponible al requisito de diseño</caption>
+          <thead>
+            <tr>
+              <th scope="col">Evidencia</th>
+              <th scope="col">Requisito</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>La inspección detectó dificultad para reconocer a qué ámbito pertenecen los pendientes.</td>
+              <td>Mostrar grupos como Universidad y Trabajo, con fecha límite y recordatorio.</td>
+            </tr>
+            <tr>
+              <td>Completar subtareas obligaba a cambiar repetidamente de pantalla.</td>
+              <td>Desplegar subtareas en la lista y guardar los cambios al marcarlas.</td>
+            </tr>
+            <tr>
+              <td>Marcar una tarea por error podía acreditar puntos por equivocación.</td>
+              <td>Confirmar el avance y ofrecer «Deshacer».</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="pending">Pendiente de incorporar la ficha de persona, las historias originales y el mapa de viaje si el
+        equipo lo elaboró.</p>
+    </section>
+    <section id="ideacion">
+      <h2>Ideación</h2>
+      <p>Las decisiones que se pueden rastrear en el rediseño fueron dar acceso directo a «+ Nueva tarea», mostrar las
+        subtareas en la lista y mantener la personalización de la mascota como un recorrido propio. El acceso directo y
+        el despliegue reducen los pasos para las acciones frecuentes.</p>
+      <p class="pending">Pendiente de agregar las fotos de lluvia de ideas y Crazy 8s y explicar qué alternativas
+        consideró el equipo y por qué eligió la propuesta desarrollada.</p>
+    </section>
+    <section id="evolucion">
+      <h2>Evolución del prototipo</h2>
+      <p><a href="anexos/wireframes-corregidos.pdf">Ver la exportación completa de los wireframes corregidos (PDF)</a>
+      </p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Evolución de los cuatro recorridos">
+        <table>
+          <caption>Cambios por tarea y motivo</caption>
+          <thead>
+            <tr>
+              <th scope="col">Tarea</th>
+              <th scope="col">Del papel al wireframe corregido</th>
+              <th scope="col">Alta fidelidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Crear una tarea</td>
+              <td>Acceso directo desde Inicio. El formulario reúne grupo, fecha, recordatorio y subtareas.</td>
+              <td>Capturas finales pendientes.</td>
+            </tr>
+            <tr>
+              <td>Completar una tarea</td>
+              <td>Subtareas desplegables, progreso visible y guardado automático. «Deshacer» permite revertir errores.
+              </td>
+              <td>Comparación preliminar disponible abajo.</td>
+            </tr>
+            <tr>
+              <td>Personalizar la mascota</td>
+              <td>Vista previa del accesorio propio y confirmación para aplicarlo.</td>
+              <td>Capturas finales pendientes.</td>
+            </tr>
+            <tr>
+              <td>Comprar un accesorio</td>
+              <td>Búsqueda, estado sin resultados y confirmación del costo antes del descuento de puntos.</td>
+              <td>Capturas finales pendientes.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>Completar una tarea</h3>
+      <div class="pair">
+        <figure><img loading="lazy" src="img/wire-subtareas.png"
+            alt="Wireframe de Mis tareas con el ensayo desplegado y una de tres subtareas marcada">
+          <figcaption>Wireframe corregido · Una de tres subtareas</figcaption>
+        </figure>
+        <figure><img loading="lazy" src="img/alta-completada.png"
+            alt="Propuesta con las tres subtareas completadas, avance general al 50 por ciento y opción Deshacer">
+          <figcaption>Propuesta de alta fidelidad · Estado completado</figcaption>
+        </figure>
+      </div>
+      <p><a href="anexos/Antes_y_despues_Completar_tarea.pdf">Ver los tres pares de pantallas del recorrido (PDF)</a>
+      </p>
+      <h3>Sistema de diseño propuesto</h3>
+      <p>Inter con tamaños 24, 20, 16 y 14. Espaciado en múltiplos de 8. Botón primario relleno, secundario con borde y
+        terciario de texto. Tarjetas, barra de progreso, casillas y navegación se reutilizan entre pantallas.</p>
+      <ul class="palette">
+        <li><span class="swatch action" aria-hidden="true"></span> Acción #4338CA</li>
+        <li><span class="swatch text" aria-hidden="true"></span> Texto #172033</li>
+        <li><span class="swatch success" aria-hidden="true"></span> Éxito #166534</li>
+        <li><span class="swatch error" aria-hidden="true"></span> Error #B42318</li>
+      </ul>
+      <p class="pending">Pendiente de añadir fotos del prototipo en papel, capturas finales y el enlace de presentación
+        de Figma.</p>
+    </section>
+    <section id="evaluacion">
+      <h2>Evaluaciones realizadas</h2>
+      <h3>Recorrido cognitivo y evaluación heurística</h3>
+      <p>Tres evaluadores revisaron los recorridos de creación, completado, personalización y compra. Estos problemas y
+        severidades figuran en el informe de inspección.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Hallazgos de la inspección">
+        <table>
+          <caption>Problemas y decisiones de rediseño</caption>
+          <thead>
+            <tr>
+              <th scope="col">Problema</th>
+              <th scope="col">Severidad</th>
+              <th scope="col">Decisión</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Demasiados pasos al completar</td>
+              <td>3</td>
+              <td>Desplegar subtareas en la misma lista.</td>
+            </tr>
+            <tr>
+              <td>Faltaban grupos, fechas y recordatorios</td>
+              <td>3</td>
+              <td>Agrupar pendientes y mostrar sus fechas.</td>
+            </tr>
+            <tr>
+              <td>Había una pantalla intermedia al crear</td>
+              <td>2</td>
+              <td>Abrir el formulario desde Inicio.</td>
+            </tr>
+            <tr>
+              <td>Había que confirmar el marcado</td>
+              <td>2</td>
+              <td>Guardar al marcar e incluir «Deshacer» al completar.</td>
+            </tr>
+            <tr>
+              <td>La búsqueda de accesorios era manual</td>
+              <td>2</td>
+              <td>Agregar búsqueda y un estado sin resultados.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p><a href="anexos/evaluacion-prototipo-papel.pdf">Consultar el informe de evaluación del prototipo en papel
+          (PDF)</a></p>
+      <h3>Prueba de usabilidad con wireframes</h3>
+      <p class="pending">Pendiente de incorporar el informe de la prueba: perfiles anónimos, resultados por tarea,
+        problemas con severidad y cambios hechos a partir de la observación.</p>
+      <h3>Plan propuesto para la prueba final</h3>
+      <p>Reclutar estudiantes que trabajen. Con consentimiento, pedirles que recorran cuatro escenarios sin indicar los
+        controles. Por cada tarea, registrar si la completaron sin ayuda, tiempo, errores y comentarios. Al final,
+        aplicar el SUS y priorizar los problemas por severidad para documentar las correcciones con un antes y un
+        después.</p>
+      <ul>
+        <li>Preparar una exposición y registrar sus tres pasos. Éxito: la tarea aparece en Universidad con los tres
+          pasos.</li>
+        <li>Actualizar el ensayo que ya terminó. Éxito: aparecen las tres subtareas completas.</li>
+        <li>Ponerle al conejo unos anteojos que ya tiene. Éxito: se guardan como aplicados.</li>
+        <li>Comprar anteojos de sol con puntos. Éxito: la confirmación muestra un saldo de 300 puntos.</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="wrap"><a href="#portada">Volver al índice del portafolio</a></footer>
+</body>
+
+</html>
