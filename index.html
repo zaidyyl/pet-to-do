@@ -171,17 +171,166 @@
             </tr>
           </tbody>
         </table>
+        <h3>Ficha de Persona</h3>
+        <p>María, una estudiante de 22 años que también trabaja.</p>
+        <dl>
+          <dt><strong>Comportamiento</strong></dt>
+          <dd>Usa listas y organización al inicio, pero el
+            desarrollo de la tarea termina dependiendo del
+            tiempo de entrega de la misma.</dd>
+          <dd>Pospone tareas complejas o poco atractivas
+            usando el celular, redes sociales u otras
+            actividades.</dd>
+
+          <dt><strong>Contexto y Entorno</strong></dt>
+          <dd>Entorno de estudio con alta presencia de
+            estímulos digitales.</dd>
+
+          <dt><strong>Meta Principal</strong></dt>
+          <dd>Completar las entregas pendientes dentro del
+            plazo estipulado para cumplir con sus responsabilidades,
+            usando la fecha limite como motor de activación y
+            reduciendo el estrés por acumulación</dd>
+
+          <dt><strong>Frustraciones</strong></dt>
+          <ul>
+            <li>
+              Dificultad o falta de comprensión de las consignas.
+            </li>
+            <li>
+              Acumulación de tareas.
+            </li>
+            <li>
+              Sensación de estrés y ansiedad.
+            </li>
+          </ul>
+        </dl>
+        <p><a href="anexos/ficha_de_persona.png">Ver la ficha de persona original</a>
+        </p>
+        <h3>Historias de Usuario</h3>
+        <dl>
+          <dd>“Como estudiante y trabajadora, quiero empezar mis tareas a tiempo para reducir mi estrés, descansar lo
+            suficiente y sentirme satisfecha con mi trabajo.”</dd>
+          <br>
+          <dd>“Como estudiante, quiero evitar las distracciones cuando una tarea es difícil para aprovechar el tiempo
+            que tengo de entenderla y realizarla.”</dd>
+          <br>
+          <dd>“Como estudiante, quiero realizar las tareas que no me gustan para no acumularlas hasta que se acerque la
+            fecha límite.”</dd>
+        </dl>
+        <h3>Mapa de viaje</h3>
+        <div id="map">
+          <div class="box" style="--nivel: 2;">
+            <span class="mood"> Neutral</span>
+            <strong>Tiene una tarea pendiente</strong>
+          </div>
+          <div class="box" style="--nivel: 1;">
+            <span class="mood"> Pensativo </span>
+            <strong>Decide cuándo empezar</strong>
+          </div>
+          <div class="box" style="--nivel: 2;">
+            <span class="mood"> Alivio temporal</span>
+            <strong>Decide postergar la tarea</strong>
+          </div>
+          <div class="box" style="--nivel: 3;">
+            <span class="mood"> Distraído</span>
+            <strong>Se distrae o realiza otras actividades</strong>
+          </div>
+          <div class="box" style="--nivel: 4;">
+            <span class="mood"> Pánico</span>
+            <strong>Se acerca la fecha límite</strong>
+          </div>
+          <div class="box" style="--nivel: 5;">
+            <span class="mood"> Estrés</span>
+            <strong>Finalmente empieza la tarea</strong>
+          </div>
+          <div class="box" style="--nivel: 3;">
+            <span class="mood"> Poca satisfacción </span>
+            <strong>Termina la tarea</strong>
+          </div>
+        </div>
+        <p><a href="anexos/mapa_de_viaje.png">Ver mapa de viaje original</a>
+        </p>
       </div>
+      <!-- 
       <p class="pending">Pendiente de incorporar la ficha de persona, las historias originales y el mapa de viaje si el
         equipo lo elaboró.</p>
+      -->
+
     </section>
     <section id="ideacion">
       <h2>Ideación</h2>
-      <p>Las decisiones que se pueden rastrear en el rediseño fueron dar acceso directo a «+ Nueva tarea», mostrar las
+      <h3>Lluvia de Ideas:</h3>
+      <ul>
+        <li>
+          Dar a la persona estímulos positivos que le hagan sentirse mejor al cumplir sus objetivos.
+        </li>
+        <li>
+          Que la persona pueda ver su progreso para motivarse a continuar.
+        </li>
+        <li>
+          Que la persona pueda ver qué recompensas puede conseguir si es que comienza y cumple sus tareas.
+        </li>
+        <li>
+          Que la persona pueda tener rachas de días de estudio.
+        </li>
+        <li>
+          Que la persona pueda <strong>tener rachas de días en los que complete sus objetivos</strong> diarios.
+        </li>
+        <li>
+          Que la persona pueda ver cuando sus amigos estudian, así se motivan a estudiar también.
+        </li>
+        <li>
+          <strong>Dividir la tarea en pasos cortos y simples.</strong>
+        </li>
+        <li>
+          Bombardeo de notificaciones cada día hasta la fecha límite con mensajes chistosos.
+        </li>
+        <li>
+          <strong>Dar una pequeña recompensa por cada avance de la tarea.</strong>
+        </li>
+        <li>
+          Sugerir métodos distintos para realizar las tareas.
+        </li>
+        <li>
+          Intercalar los pasos de varias tareas a lo largo del día para no abrumar y frustrar con una sola cosa.
+        </li>
+        <li>
+          <strong>Mensajes de apoyo motivadores</strong>, pero casuales, no condescendientes, <strong>no
+            molestos</strong>, que no causen culpa.
+        </li>
+      </ul>
+      <h3>Ideas Priorizadas:</h3>
+      <ul>
+        <li>
+          Sistema de rachas al cumplir un objetivo.
+        </li>
+        <li>
+          Dividir la tarea en pasos cortos y simples, dar recompensa por cada paso.
+        </li>
+        <li>
+          Mensajes motivadores y de apoyo diarios, no molestos.
+        </li>
+      </ul>
+      <dl>
+        <dd>
+          <p>
+            Se consideraron primero ideas como "sugerir métodos para realizar tareas" o también "notificaciones constantes hasta la 
+            fecha límite", pero se descartó la primera idea por las complejidades que eso implicaría (utilizar IA para hacer las
+            sugerencias, lo cual requeriría ajustar las respuestas, entre otras cosas) y las segunda idea se descartó porque la intención 
+            es no abrumar al usuario.
+          </p>
+          <p>Las decisiones que se pueden rastrear en el rediseño fueron dar acceso directo a «+ Nueva tarea», mostrar las
         subtareas en la lista y mantener la personalización de la mascota como un recorrido propio. El acceso directo y
         el despliegue reducen los pasos para las acciones frecuentes.</p>
-      <p class="pending">Pendiente de agregar las fotos de lluvia de ideas y Crazy 8s y explicar qué alternativas
+
+        </dd>
+      </dl>
+      <p><a href="anexos/crazy_8s.pdf">Ver crazy 8s</a></p>
+      <!-- 
+      <p class="pending">Pendiente de agregar las fotos de lluvia de ideas y explicar qué alternativas
         consideró el equipo y por qué eligió la propuesta desarrollada.</p>
+      -->
     </section>
     <section id="evolucion">
       <h2>Evolución del prototipo</h2>
@@ -244,6 +393,8 @@
         <li><span class="swatch success" aria-hidden="true"></span> Éxito #166534</li>
         <li><span class="swatch error" aria-hidden="true"></span> Error #B42318</li>
       </ul>
+      <p><a href="anexos/prototipo_en_papel.pdf">Ver prototipo en papel</a></p>
+      <p><a href="https://www.figma.com/proto/qWQEirjZR6qDMIfDUjNW5k/Sin-t%C3%ADtulo?node-id=3-1417&p=f&t=OpvH9sVLL35KWxFm-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A1417&show-proto-sidebar=1">Ver presentación en Figma</a></p>
       <p class="pending">Pendiente de añadir fotos del prototipo en papel, capturas finales y el enlace de presentación
         de Figma.</p>
     </section>
