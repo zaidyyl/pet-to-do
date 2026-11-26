@@ -172,39 +172,52 @@
           </tbody>
         </table>
         <h3>Ficha de Persona</h3>
-        <p>María, una estudiante de 22 años que también trabaja.</p>
-        <dl>
-          <dt><strong>Comportamiento</strong></dt>
-          <dd>Usa listas y organización al inicio, pero el
-            desarrollo de la tarea termina dependiendo del
-            tiempo de entrega de la misma.</dd>
-          <dd>Pospone tareas complejas o poco atractivas
-            usando el celular, redes sociales u otras
-            actividades.</dd>
 
-          <dt><strong>Contexto y Entorno</strong></dt>
-          <dd>Entorno de estudio con alta presencia de
-            estímulos digitales.</dd>
+<div class="ficha">
+  <!-- Tarjeta Perfil -->
+  <div class="card perfil">
+    <img src="img/maria.png" alt="Foto de María" class="foto">
+    <h4>MARÍA</h4>
+    <div class="datos-box">
+      <p><strong>Edad:</strong> 22</p>
+      <p><strong>Sexo:</strong> Mujer</p>
+      <p><strong>Ocupación:</strong> Estudia y trabaja</p>
+    </div>
+  </div>
 
-          <dt><strong>Meta Principal</strong></dt>
-          <dd>Completar las entregas pendientes dentro del
-            plazo estipulado para cumplir con sus responsabilidades,
-            usando la fecha limite como motor de activación y
-            reduciendo el estrés por acumulación</dd>
+  <!-- Columna Derecha -->
+  <div class="col-derecha">
+    <div class="card">
+      <h5>Comportamiento:</h5>
+      <ul>
+        <li>Usa listas y organización al inicio, pero el desarrollo de la tarea termina dependiendo del tiempo de entrega de la misma.</li>
+        <li>Pospone tareas complejas o poco atractivas usando el celular, redes sociales u otras actividades.</li>
+      </ul>
+    </div>
 
-          <dt><strong>Frustraciones</strong></dt>
-          <ul>
-            <li>
-              Dificultad o falta de comprensión de las consignas.
-            </li>
-            <li>
-              Acumulación de tareas.
-            </li>
-            <li>
-              Sensación de estrés y ansiedad.
-            </li>
-          </ul>
-        </dl>
+    <div class="card">
+      <h5>Contexto y entorno</h5>
+      <p>Entorno de estudio con alta presencia de estímulos digitales.</p>
+    </div>
+  </div>
+
+  <!-- Fila Inferior -->
+  <div class="fila-inferior">
+    <div class="card">
+      <h5>Meta principal</h5>
+      <p>Completar las entregas pendientes dentro del plazo estipulado para cumplir con sus responsabilidades, usando la fecha límite como motor de activación y reduciendo el estrés por acumulación.</p>
+    </div>
+
+    <div class="card">
+      <h5>Frustraciones:</h5>
+      <ul>
+        <li>Dificultad o falta de comprensión de las consignas.</li>
+        <li>Acumulación de tareas.</li>
+        <li>Sensación de estrés y ansiedad.</li>
+      </ul>
+    </div>
+  </div>
+</div>
         <p><a href="anexos/ficha_de_persona.png">Ver la ficha de persona original</a>
         </p>
         <h3>Historias de Usuario</h3>
@@ -218,39 +231,9 @@
           <dd>“Como estudiante, quiero realizar las tareas que no me gustan para no acumularlas hasta que se acerque la
             fecha límite.”</dd>
         </dl>
-        <h3>Mapa de viaje</h3>
-        <div id="map">
-          <div class="box" style="--nivel: 2;">
-            <span class="mood"> Neutral</span>
-            <strong>Tiene una tarea pendiente</strong>
-          </div>
-          <div class="box" style="--nivel: 1;">
-            <span class="mood"> Pensativo </span>
-            <strong>Decide cuándo empezar</strong>
-          </div>
-          <div class="box" style="--nivel: 2;">
-            <span class="mood"> Alivio temporal</span>
-            <strong>Decide postergar la tarea</strong>
-          </div>
-          <div class="box" style="--nivel: 3;">
-            <span class="mood"> Distraído</span>
-            <strong>Se distrae o realiza otras actividades</strong>
-          </div>
-          <div class="box" style="--nivel: 4;">
-            <span class="mood"> Pánico</span>
-            <strong>Se acerca la fecha límite</strong>
-          </div>
-          <div class="box" style="--nivel: 5;">
-            <span class="mood"> Estrés</span>
-            <strong>Finalmente empieza la tarea</strong>
-          </div>
-          <div class="box" style="--nivel: 3;">
-            <span class="mood"> Poca satisfacción </span>
-            <strong>Termina la tarea</strong>
-          </div>
+        <div style="overflow-x:scroll">
+          <img src="img/mapa_de_viaje.png" alt="Mapa de viaje de usuario.">
         </div>
-        <p><a href="anexos/mapa_de_viaje.png">Ver mapa de viaje original</a>
-        </p>
       </div>
       <!-- 
       <p class="pending">Pendiente de incorporar la ficha de persona, las historias originales y el mapa de viaje si el
@@ -260,7 +243,10 @@
     </section>
     <section id="ideacion">
       <h2>Ideación</h2>
-      <h3>Lluvia de Ideas:</h3>
+      <p>A continuación, se muestra la lluvia de ideas original para el diseño del prototipo, con las ideas elegidas 
+        resaltadas, formándose finalmente tres ideas principales, combinando elementos de varias en la lluvia de ideas.
+      </p>
+      <!--
       <ul>
         <li>
           Dar a la persona estímulos positivos que le hagan sentirse mejor al cumplir sus objetivos.
@@ -300,6 +286,46 @@
             molestos</strong>, que no causen culpa.
         </li>
       </ul>
+    -->
+      <h3>Lluvia de ideas</h3>
+      <div id="ideas">
+        <div class="box">
+          <p>Dar a la persona estímulos positivos que le hagan sentirse mejor al cumplir sus objetivos.</p>
+        </div>
+        <div class="box">
+          <p>Que la persona pueda ver su progreso para motivarse a continuar.</p>
+        </div>
+        <div class="box">
+          <p>Que la persona pueda ver qué recompensas puede conseguir si es que comienza y cumple sus tareas.</p>
+        </div>
+        <div class="box">
+          <p>Que la persona pueda tener rachas de días de estudio.</p>
+        </div>
+        <div class="box">
+          <p>Que la persona pueda <strong>tener rachas de días en los que complete sus objetivos</strong> diarios.</p>
+        </div>
+        <div class="box">
+          <p>Que la persona pueda ver cuando sus amigos estudian, así se motivan a estudiar también.</p>
+        </div>
+        <div class="box">
+          <p><strong>Dividir la tarea en pasos cortos y simples.</strong></p>
+        </div>
+        <div class="box">
+          <p>Bombardeo de notificaciones cada día hasta la fecha límite con mensajes chistosos.</p>
+        </div>
+        <div class="box">
+          <p><strong>Dar una pequeña recompensa por cada avance de la tarea.</strong></p>
+        </div>
+        <div class="box">
+          <p>Sugerir métodos distintos para realizar las tareas.</p>
+        </div>
+        <div class="box">
+          <p>Intercalar los pasos de varias tareas a lo largo del día para no abrumar y frustrar con una sola cosa.</p>
+        </div>
+        <div class="box">
+          <p><strong>Mensajes de apoyo motivadores</strong>, pero casuales, no condescendientes, <strong>no molestos</strong>, que no causen culpa.</p>
+        </div>
+      </div>
       <h3>Ideas Priorizadas:</h3>
       <ul>
         <li>
@@ -382,16 +408,16 @@
           <figcaption>Propuesta de alta fidelidad · Estado completado</figcaption>
         </figure>
       </div>
-      <p><a href="anexos/Antes_y_despues_Completar_tarea.pdf">Ver los tres pares de pantallas del recorrido (PDF)</a>
+      <p><a href="anexos/Prototipos_de_Alta_Fidelidad.pdf">Ver pantallas del recorrido (PDF)</a>
       </p>
       <h3>Sistema de diseño propuesto</h3>
       <p>Inter con tamaños 24, 20, 16 y 14. Espaciado en múltiplos de 8. Botón primario relleno, secundario con borde y
         terciario de texto. Tarjetas, barra de progreso, casillas y navegación se reutilizan entre pantallas.</p>
       <ul class="palette">
-        <li><span class="swatch action" aria-hidden="true"></span> Acción #4338CA</li>
-        <li><span class="swatch text" aria-hidden="true"></span> Texto #172033</li>
-        <li><span class="swatch success" aria-hidden="true"></span> Éxito #166534</li>
-        <li><span class="swatch error" aria-hidden="true"></span> Error #B42318</li>
+        <li><span class="swatch text" aria-hidden="true"></span> Texto #26372F</li>
+        <li><span class="swatch primary" aria-hidden="true"></span> Principal #3D725A</li>
+        <li><span class="swatch secondary" aria-hidden="true"></span> Secundario #E5EEE8</li>        
+        <li><span class="swatch background" aria-hidden="true"></span> Background #FFFFFF</li>
       </ul>
       <p><a href="anexos/prototipo_en_papel.pdf">Ver prototipo en papel</a></p>
       <p><a href="https://www.figma.com/proto/qWQEirjZR6qDMIfDUjNW5k/Sin-t%C3%ADtulo?node-id=3-1417&p=f&t=OpvH9sVLL35KWxFm-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A1417&show-proto-sidebar=1">Ver presentación en Figma</a></p>
@@ -452,6 +478,7 @@
           accesorios sin ayuda. También se busca verificar si se redujeron las dificultades detectadas en la evaluación 
           anterior, especialmente los pasos necesarios para gestionar tareas y subtareas.
         </p>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Tareas para la pureba de usabilidad">
         <table>
           <caption>Tareas escritas como escenarios</caption>
           <thead>
@@ -484,7 +511,7 @@
             </tr>            
           </tbody>
         </table>
-        <br>
+        </div>
         <h3>Perfiles:</h3>
         <ul>
         <li><strong>P1:</strong> Estudiante de 21 años, necesita organizarse para poder realizar las tareas</li>
@@ -493,8 +520,8 @@
         </ul>
       
       <h3>Resultados por tarea:</h3>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Resultados obtenidos tras las pruebas de wireframes con usuarios">
         <table>
-          <caption>Tareas escritas como escenarios</caption>
           <thead>
             <tr>
               <th scope="col">Tarea </th>
@@ -545,10 +572,12 @@
             </tr>            
           </tbody>
         </table>
+        </div>
         <br>
         <strong>Problemas Consolidados:</strong>
         <br>
         <br>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Problemas hallados, sus detalles y el plan para proceder">
         <table>
           <thead>
             <th>N.º </th>
@@ -588,6 +617,7 @@
             </tr>
           </tbody>
         </table>
+        </div> 
       <!--
         <p class="pending">Pendiente de incorporar el informe de la prueba: perfiles anónimos, resultados por tarea,
         problemas con severidad y cambios hechos a partir de la observación.</p>
