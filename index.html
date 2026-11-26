@@ -395,8 +395,10 @@
       </ul>
       <p><a href="anexos/prototipo_en_papel.pdf">Ver prototipo en papel</a></p>
       <p><a href="https://www.figma.com/proto/qWQEirjZR6qDMIfDUjNW5k/Sin-t%C3%ADtulo?node-id=3-1417&p=f&t=OpvH9sVLL35KWxFm-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A1417&show-proto-sidebar=1">Ver presentación en Figma</a></p>
-      <p class="pending">Pendiente de añadir fotos del prototipo en papel, capturas finales y el enlace de presentación
-        de Figma.</p>
+      <!--
+      <p class="pending">Pendiente de añadir fotos del prototipo en papel, capturas finales y el enlace de presentación 
+        de Figma.</p> 
+      -->
     </section>
     <section id="evaluacion">
       <h2>Evaluaciones realizadas</h2>
@@ -445,9 +447,153 @@
       <p><a href="anexos/evaluacion-prototipo-papel.pdf">Consultar el informe de evaluación del prototipo en papel
           (PDF)</a></p>
       <h3>Prueba de usabilidad con wireframes</h3>
-      <p class="pending">Pendiente de incorporar el informe de la prueba: perfiles anónimos, resultados por tarea,
+        <strong> Objetivo de la Prueba</strong>
+        <p>Comprobar si las personas pueden registrar y completar sus actividades, personalizar la mascota y comprar 
+          accesorios sin ayuda. También se busca verificar si se redujeron las dificultades detectadas en la evaluación 
+          anterior, especialmente los pasos necesarios para gestionar tareas y subtareas.
+        </p>
+        <table>
+          <caption>Tareas escritas como escenarios</caption>
+          <thead>
+            <tr>
+              <th scope="col">Tarea </th>
+              <th scope="col">Escenario para el participante</th>
+              <th scope="col">Cuando se considera completada</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Registrar una actividad</td>
+              <td>Tenés que entregar un trabajo de la facultad el viernes. Querés dejarlo anotado para tener presente lo que te falta hacer.</td>
+              <td>La actividad queda guardada y aparece en la lista correspondiente.</td>
+            </tr>
+            <tr>
+              <td>Registrar que terminó una actividad </td>
+              <td>Ya terminaste un trabajo que tenías pendiente y también todas sus partes. Querés que la aplicación refleje que ya lo hiciste.</td>
+              <td>La actividad y sus subtareas quedan registradas como finalizadas.</td>
+            </tr>
+            <tr>
+              <td>Personalizar la mascota</td>
+              <td>Querés cambiar la apariencia de tu compañero virtual usando uno de los elementos que ya tenés.</td>
+              <td>El elemento elegido queda aplicado a la mascota y el cambio se conserva. </td>
+            </tr>
+            <tr>
+              <td>Adquirir un accesorio</td>
+              <td>Reuniste suficientes puntos y querés conseguir un elemento nuevo para cambiar la apariencia de tu compañero virtual. </td>
+              <td>La compra queda confirmada, se actualiza el saldo y el elemento queda disponible entre los adquiridos. </td>
+            </tr>            
+          </tbody>
+        </table>
+        <br>
+        <h3>Perfiles:</h3>
+        <ul>
+        <li><strong>P1:</strong> Estudiante de 21 años, necesita organizarse para poder realizar las tareas</li>
+        <li><strong>P2:</strong> 21 años, estudiante y con trabajo de medio tiempo, le gusta organizarse</li>
+        <li><strong>P3:</strong> Estudiante de 22 años, trabaja medio tiempo</li>
+        </ul>
+      
+      <h3>Resultados por tarea:</h3>
+        <table>
+          <caption>Tareas escritas como escenarios</caption>
+          <thead>
+            <tr>
+              <th scope="col">Tarea </th>
+              <th scope="col">Completaron, de 3</th>
+              <th scope="col">Tiempo Promedio</th>
+              <th scope="col">Errores Totales </th>
+              <th scope="col">Pedidos de ayuda Totales </th>
+              <th scope="col">Facilidad promedio (1-7) </th>
+              <th scope="col">Comentario </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Registrar una actividad</td>
+              <td>3</td>
+              <td>30 seg</td>
+              <td>3</td>
+              <td>0</td>
+              <td>6</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Registrar que terminó una actividad </td>
+              <td>3</td>
+              <td>15 seg</td>
+              <td>6</td>
+              <td>0</td>
+              <td>7</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Personalizar la mascota</td>
+              <td>3</td>  
+              <td>1 min 30 seg</td>  
+              <td>5</td>
+              <td>0</td> 
+              <td>6</td>  
+              <td>Ante la duda de los anteojos, simplemente nos olvidamos de mostrar que cambie eso.</td>       
+            </tr>
+            <tr>
+              <td>Adquirir un accesorio</td>
+              <td>3 </td>
+              <td>30 seg</td>
+              <td>4</td>
+              <td>1</td>
+              <td>6</td>
+              <td>Tampoco hicimos el que baje el precio ya que es todo figma aun</td>
+            </tr>            
+          </tbody>
+        </table>
+        <br>
+        <strong>Problemas Consolidados:</strong>
+        <br>
+        <br>
+        <table>
+          <thead>
+            <th>N.º </th>
+            <th>Problema observado</th>
+            <th>Tarea o pantalla</th>
+            <th>Severidad</th>
+            <th>Cambio que harán</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Que pasa si luego de recibir la recompensa, se compra un objeto y luego se desmarca?</td>
+              <td>Compra y completación de tareas</td>
+              <td>3</td>
+              <td>Que se reembolse el objeto que fue comprado con esos puntos</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Luego de comprar no cambian los puntos que se tenían anteriormente</td>
+              <td>Compra de accesorios</td>
+              <td>3</td>
+              <td>Hacer las modificaciones necesarias para que cambien los puntos que tiene la persona cuando compra</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>No hay feedback visual de el accesorio que fue comprado</td>
+              <td>Compra de accesorios y pantalla inicial</td>
+              <td>3</td>
+              <td>Hacer las modificaciones necesarias para que se muestre el accesorio que fue adquirido una vez se vuelve a home luego de comprar</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>No lleva de regreso a home luego de crear una tarea y no hay forma de volver</td>
+              <td>Crear tarea</td>
+              <td>3</td>
+              <td>Agregar un boton de home en crear tarea.</td>
+            </tr>
+          </tbody>
+        </table>
+      <!--
+        <p class="pending">Pendiente de incorporar el informe de la prueba: perfiles anónimos, resultados por tarea,
         problemas con severidad y cambios hechos a partir de la observación.</p>
-      <h3>Plan propuesto para la prueba final</h3>
+      -->
+        <h3>Plan propuesto para la prueba final</h3>
+    
       <p>Reclutar estudiantes que trabajen. Con consentimiento, pedirles que recorran cuatro escenarios sin indicar los
         controles. Por cada tarea, registrar si la completaron sin ayuda, tiempo, errores y comentarios. Al final,
         aplicar el SUS y priorizar los problemas por severidad para documentar las correcciones con un antes y un
